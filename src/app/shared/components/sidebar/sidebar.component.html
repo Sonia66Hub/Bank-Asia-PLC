@@ -1,0 +1,26 @@
+<div class="gw-sidebar">
+  <ul class="gw-nav gw-nav-list menu">
+    
+    <li>
+      <a routerLink="/daily-admit" routerLinkActive="active-menu" class="nav-item">
+        <i class="fa-solid fa-file-lines"></i>
+        <span class="gw-menu-text">Daily Admit Download</span>
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/signature" routerLinkActive="active-menu" class="nav-item">
+        <i class="fa-solid fa-file-signature"></i>
+        <span class="gw-menu-text">Signature Sheet</span>
+      </a>
+    </li>
+
+    <li>
+      <a (click)="signOut()" class="nav-item cursor-pointer">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <span class="gw-menu-text">Sign Out</span>
+      </a>
+    </li>
+
+  </ul>
+</div>
