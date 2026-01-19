@@ -1,0 +1,43 @@
+<div class="main-wrapper">
+  
+  <div class="pftitle">
+    <h2>Total Admit Download datewise</h2>
+  </div>
+
+  <div class="card-container">
+    
+    <div class="teller-header" (click)="toggleAccordion()">
+      <span class="teller-text">Teller</span>
+      <span class="indicator" [ngClass]="isOpen ? 'icon-chevron-up' : 'icon-chevron-down'"></span>
+    </div>
+
+    <div *ngIf="isOpen" class="table-content">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th class="col-day">Day</th>
+            <th class="col-date">Download Date</th>
+            <th class="col-count">Number of downloaded Admit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data; let i = index" [class.even-row]="i % 2 === 0">
+            <td class="col-day">{{ i + 1 }}</td>
+            <td class="col-date dwdtxt">{{ item.date }}</td>
+            <td class="col-count">
+              <span class="badge">{{ item.count }}</span>
+            </td>
+          </tr>
+
+          <tr class="total-row">
+            <td class="col-day">Total =</td>
+            <td class="col-date"></td>
+            <td class="col-count">
+              <span class="badge">{{ total }}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

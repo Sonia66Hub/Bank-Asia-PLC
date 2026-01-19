@@ -1,0 +1,20 @@
+{
+  "users": [
+    { "username": "admin1234566", "password": "123456" },
+    { "username": "user00000001", "password": "321654" }
+   
+  ],
+  "jobs": [
+    { "id": "1413040", "name": "Teller" },
+    { "id": "1413041", "name": "Cashier" }
+  ],
+  "centers": [
+    { "id": "Lalmatia", "name": "Lalmatia Government Women's College", "jobId": "1413040" },
+    { "id": "Mirpur", "name": "Mirpur College, Mirpur, Dhaka", "jobId": "1413041" }
+  ],
+  "rooms": [
+    { "id": "310", "name": "Begum Rokeya Bhaban – Room 310", "centerId": "Lalmatia" },
+    { "id": "311", "name": "Main Hall – Room 311", "centerId": "Lalmatia" },
+    { "id": "210", "name": "Mirpur Hall – Room 210", "centerId": "Mirpur" }
+  ]
+}

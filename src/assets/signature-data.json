@@ -1,0 +1,17 @@
+{
+  "jobPositions": [
+    "Officer",
+    "Senior Officer",
+    "Manager"
+  ],
+  "centers": [
+    "Dhaka",
+    "Chittagong",
+    "Rajshahi"
+  ],
+  "rooms": [
+    "101",
+    "102",
+    "201"
+  ]
+}  

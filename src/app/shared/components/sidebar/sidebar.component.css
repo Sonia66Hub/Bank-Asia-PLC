@@ -1,0 +1,64 @@
+/* সাইডবারের সাধারণ স্টাইল */
+.gw-sidebar {
+  /* উইডথ ২৪০ থেকে বাড়িয়ে ২৬০ বা ২৭০ করলে এটি আরও ডানে সরে আসবে */
+  width: 260px; 
+  height: 100vh;
+  border-right: 1px dashed #ccc;
+  padding: 20px 15px; /* উপরে-নিচে একটু প্যাডিং বাড়ানো হয়েছে */
+  background-color: #fff;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 10px; /* গ্যাপ একটু বাড়ানো হয়েছে */
+}
+
+/* বাটনগুলোর সাধারণ অবস্থা */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px; /* প্যাডিং বাড়িয়ে বাটনগুলো বড় করা হয়েছে */
+  border-radius: 30px; /* আরও স্মুথ গোল শেপ */
+  text-decoration: none;
+  color: #444 !important; 
+  background-color: transparent !important;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+}
+
+/* ১. হোভার অবস্থা - মাউস নিলে আকাশী কালার হবে */
+.nav-item:hover {
+  background-color: #ADC9E9 !important; 
+  color: #083b78 !important; /* হোভারে টেক্সট গাঢ় নীল হবে */
+  transform: translateX(5px); /* হোভার করলে হালকা ডানে সরবে, যা দেখতে প্রিমিয়াম লাগে */
+}
+
+/* ২. ক্লিক করলে বা একটিভ থাকলে গাঢ় নীল হবে */
+.active-menu {
+  background-color: #083b78 !important; 
+  color: #ffffff !important; 
+  box-shadow: 0 4px 12px rgba(8, 59, 120, 0.3); /* একটিভ মেনুতে হালকা শ্যাডো */
+}
+
+/* একটিভ অবস্থায় আইকন ও টেক্সট সাদা রাখার জন্য */
+.active-menu i, 
+.active-menu .gw-menu-text {
+  color: #ffffff !important;
+}
+
+.gw-menu-text {
+  font-size: 14px;
+  font-weight: 600; /* ফন্ট একটু বোল্ড করা হয়েছে */
+}
+
+/* আইকনের জন্য আলাদা স্টাইল (ঐচ্ছিক) */
+.nav-item i {
+  font-size: 18px;
+  width: 24px; /* আইকনগুলো সব সমান লাইনে থাকবে */
+  text-align: center;
+}

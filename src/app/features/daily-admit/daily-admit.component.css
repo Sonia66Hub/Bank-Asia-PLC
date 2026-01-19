@@ -1,0 +1,107 @@
+.main-wrapper {
+  background-color: #ffffff;
+  /* প্যাডিং কমিয়ে ২০ পিক্সেল করা হয়েছে যাতে বাম দিকে সরে আসে */
+  padding: 15px 20px 15px 20px; 
+  min-height: auto; 
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pftitle {
+  background-color: #d8d8d8;
+  color: #333;
+  /* ডানের গ্যাপ ঠিক রেখে উইডথ অ্যাডজাস্ট করা হয়েছে */
+  width: 100%; 
+  max-width: 1200px; /* স্ক্রিনশটের মতো একটু চওড়া করা হয়েছে */
+  height: 55px; 
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin: 0; 
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.pftitle h2 {
+  font-size: 19px; 
+  margin: 0;
+  font-weight: 500;
+}
+
+.card-container {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%; 
+  max-width: 1200px;
+  margin: 0;
+  padding: 12px; 
+  box-sizing: border-box;
+  margin-bottom: 20px; 
+  box-shadow: 0 4px 6px -4px rgba(0,0,0,0.1);
+}
+
+.teller-header {
+  background-color: #4b4b4b;
+  color: white;
+  padding: 8px 15px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.teller-text {
+  font-weight: bold;
+  font-size: 14px; 
+}
+
+.indicator {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  transition: transform 0.3s ease;
+}
+
+.icon-chevron-up { transform: rotate(-45deg); }
+.icon-chevron-down { transform: rotate(135deg); }
+
+.table-content {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  padding: 10px; 
+  font-size: 13px;
+  text-align: left;
+}
+
+.even-row {
+  background-color: #f2e9e9;
+}
+
+.badge {
+  background-color: #717171;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  display: inline-block; /* স্পেলিং ঠিক করা হয়েছে */
+}
+
+.total-row {
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+}

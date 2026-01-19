@@ -1,0 +1,86 @@
+<div class="" #parentDivRef>
+  @if (isFullWidth()) {
+  <div class="max-w-sm pb-1">
+    <label for="input-label" class="block text-xs font-medium mb-2">{{
+      searchLabel()
+    }}</label>
+    <input
+      type="text"
+      id="input-label"
+      name="input-label-name"
+      class="py-2 px-3 block w-full rounded border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
+      placeholder="Search"
+      (focus)="onSearchInputFocus()"
+      (blur)="onSearchInputBlur()"
+      [(ngModel)]="searchQueryInput"
+    />
+  </div>
+  } @else {
+  <div class="flex items-center mb-4">
+    <label for="input-label" class="w-1/2 text-xs font-medium mr-4">{{
+      searchLabel()
+    }}</label>
+    @if (isSearchBox()) {
+    <input
+      type="text"
+      id="input-label"
+      name="input-label-name"
+      class="flex-grow rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-500"
+      placeholder="Search"
+      [(ngModel)]="searchQueryInput"
+    />
+    }
+  </div>
+  } @if (isOverLayVisible()) {
+  <div
+    class="bg-white rounded shadow border border-gray-300 overflow-y-auto max-h-[150px] p-4 mb-4"
+  >
+    <ul class="">
+      @for (item of suggestions(); track $index) {
+      <li
+        class="flex items-center mb-2"
+        (click)="toggleSelection(item)"
+        (keypress)="handleKeypress($event, item)"
+      >
+        @if (checkBoxVisible()) {
+        <div class="flex items-center mr-2">
+          @if (item.isSelected) {
+          <div
+            class="w-5 h-5 border-2 border-gray-300 rounded-sm bg-blue-500 flex items-center justify-center"
+          >
+            <svg
+              class="w-4 h-4 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+          </div>
+          } @else {
+          <div class="w-5 h-5 border-2 border-gray-300 rounded-sm"></div>
+          }
+        </div>
+        }
+
+        <label for="{{ item.selectId }}" class="text-xs">{{
+          item.label
+        }}</label>
+      </li>
+      }
+
+      @if (searchQueryInput().trim() && suggestions().length === 0) {
+      <li>
+        <p>No Item found!</p>
+      </li>
+      }
+    </ul>
+  </div>
+  }
+</div>
