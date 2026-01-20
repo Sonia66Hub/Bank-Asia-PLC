@@ -1,27 +1,27 @@
 .signature-card {
   border: 1px solid #c1c1c1;
   background: white;
-  /* মার্জিন এবং গ্যাপ সামান্য কমানো হয়েছে */
-  margin: 10px 15px; 
+
+  margin: 8px 10px; 
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  /* উইডথ ১০% ছোট করা হয়েছে */
+ 
   width: calc(100% - 30px); 
-  max-width: 900px; /* ১০০০px থেকে কমিয়ে ৯০০px করা হয়েছে */
+  max-width: 700px; 
   display: block;
   box-sizing: border-box;
 }
 
 .signature-header {
   background-color: #d8d8d8; 
-  padding: 10px 15px; /* প্যাডিং কমানো হয়েছে */
+  padding: 10px 15px; 
   border-bottom: 1px solid #ccc;
   width: 100%;
   box-sizing: border-box;
 }
 
 .signature-header h2 {
-  font-size: 16px; /* ১৮px থেকে কমিয়ে ১৬px করা হয়েছে */
+  font-size: 16px; 
   font-weight: 600;
   color: #333;
   margin: 0;
@@ -30,22 +30,22 @@
 .inner-form-box {
   border: none !important; 
   position: relative !important;
-  /* মার্জিন এবং প্যাডিং কমিয়ে আরও কম্প্যাক্ট করা হয়েছে */
+ 
   margin: 15px auto !important; 
   padding: 25px 35px !important; 
-  width: 90% !important; 
+  width: 70% !important; 
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23bbb' stroke-width='1.2' stroke-dasharray='8%2c 12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e") !important;
   border-radius: 4px !important;
 }
 
-/* ইনপুট এবং সিলেক্ট বক্সের সাইজ আরও ছোট করা হয়েছে */
+
 select {
   width: 100% !important;
-  height: 30px !important; /* ৩৩px থেকে কমিয়ে ৩০px করা হয়েছে */
+  height: 30px !important; 
   border: 1px solid #ccc !important;
   border-radius: 4px !important;
   padding: 0 8px !important;
-  font-size: 13px !important; /* ১৪px থেকে ১৩px */
+  font-size: 13px !important; 
   transition: all 0.2s ease;
 }
 
@@ -55,23 +55,23 @@ select:focus {
 }
 
 .form-group {
-  margin-bottom: 15px !important; /* ২০px থেকে ১৫px */
+  margin-bottom: 15px !important;
   width: 100%;
 }
 
 .form-group label {
-  font-size: 13px !important; /* ১৪px থেকে ১৩px */
+  font-size: 13px !important; 
   font-weight: bold;
   margin-bottom: 6px;
   display: block;
   color: #444;
 }
 
-/* 'Start Pdf' বাটনটি ছোট করা হয়েছে */
+
 .start-pdf-btn {
   background-color: #1a3a5a;
   color: white;
-  padding: 6px 20px; /* ৮px থেকে কমিয়ে ৬px */
+  padding: 6px 20px; 
   border: none;
   border-radius: 4px;
   font-size: 13px;

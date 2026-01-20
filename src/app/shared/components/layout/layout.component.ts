@@ -6,6 +6,7 @@ import { RouterModule, Router } from '@angular/router';
 
 import { FooterComponent } from '../../..//core/layouts/footer/footer.component';
 import { HeaderComponent } from '../../..//core/layouts/header/header.component';
+
 @Component({
   selector: 'app-layout',
   standalone: true,
