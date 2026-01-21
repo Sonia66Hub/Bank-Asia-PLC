@@ -35,10 +35,6 @@ export class CookieService {
         }
         return null;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
     deleteCookie(name: string): void {
         if (this.isBrowser) {
             this.setCookie(name, "", -1);

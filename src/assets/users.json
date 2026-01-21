@@ -1,16 +1,8 @@
 {
   "users": [
     { "username": "admin1234566", "password": "123456" },
-<<<<<<< HEAD
     { "username": "user00000001", "password": "321654" }
-   
-=======
-    { "username": "user00000001", "password": "321654" },
-    { "username": "soniayesmin1", "password": "654321" },
-    { "username": "soniakhatun2", "password": "290435" },
-    { "username": "Rahim0000013", "password": "093486" },
-    { "username": "Kamal0000014", "password": "690546" }
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
+
   ],
   "jobs": [
     { "id": "1413040", "name": "Teller" },

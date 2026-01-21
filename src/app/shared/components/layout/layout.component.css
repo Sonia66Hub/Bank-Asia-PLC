@@ -1,37 +1,23 @@
-
 .nav-item span {
-<<<<<<< HEAD
-  font-size: 14px !important;   
-  font-weight: 600 !important;   
-=======
-  font-size: 19px !important;   
-  font-weight: 700 !important;   
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
+  font-size: 19px !important;
+  font-weight: 700 !important;
   display: inline-block;
   line-height: 1.2;
 }
-
 
 .nav-item i {
   font-size: 20px !important;
   margin-right: 10px;
 }
 
-
 .user-name {
-<<<<<<< HEAD
-  font-size: 15px !important;
-  font-weight: 700 !important;
-=======
   font-size: 22px !important;
   font-weight: 800 !important;
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
   color: #083b78 !important;
   display: block;
   text-align: center;
   margin: 15px 0;
 }
-
 
 .nav-item {
   display: flex !important;

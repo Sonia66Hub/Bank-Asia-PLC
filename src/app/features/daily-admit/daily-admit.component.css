@@ -1,17 +1,11 @@
 .main-wrapper {
   background-color: #ffffff;
-<<<<<<< HEAD
-  /* প্যাডিং কমিয়ে ২০ পিক্সেল করা হয়েছে যাতে বাম দিকে সরে আসে */
   padding: 15px 20px 15px 20px; 
-=======
-  padding: 20px;
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
   min-height: auto; 
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: flex-start; 
-<<<<<<< HEAD
   width: 100%;
   box-sizing: border-box;
 }
@@ -19,48 +13,27 @@
 .pftitle {
   background-color: #d8d8d8;
   color: #333;
-  /* ডানের গ্যাপ ঠিক রেখে উইডথ অ্যাডজাস্ট করা হয়েছে */
   width: 100%; 
-  max-width: 1200px; /* স্ক্রিনশটের মতো একটু চওড়া করা হয়েছে */
+  max-width: 1200px; 
   height: 55px; 
   display: flex;
   align-items: center;
   padding: 0 15px;
-=======
-}
-
-.pftitle {
-  background-color: #e0e0e0;
-  color: #333;
-  
-  width: 1850px; 
-  height: 85px; 
-  display: flex;
-  align-items: center;
-  padding: 0 25px;
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
   margin: 0; 
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
 
 .pftitle h2 {
-<<<<<<< HEAD
   font-size: 19px; 
   margin: 0;
   font-weight: 500;
-=======
-  font-size: 26px; 
-  margin: 0;
-  font-weight: 700;
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
 }
 
 .card-container {
   background-color: white;
   border: 1px solid #ccc;
   border-top: none;
-<<<<<<< HEAD
   width: 100%; 
   max-width: 1200px;
   margin: 0;
@@ -74,20 +47,6 @@
   background-color: #4b4b4b;
   color: white;
   padding: 8px 15px; 
-=======
-  
-  width: 1850px; 
-  margin: 0;
-  padding: 30px; 
-  box-sizing: border-box;
-  margin-bottom: 20px; 
-}
-
-.teller-header {
-  background-color: #3b3b3b;
-  color: white;
-  padding: 18px 25px; 
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,7 +55,6 @@
 
 .teller-text {
   font-weight: bold;
-<<<<<<< HEAD
   font-size: 14px; 
 }
 
@@ -115,32 +73,6 @@
 .table-content {
   border: 1px solid #ddd;
   margin-top: 10px;
-=======
-  font-size: 20px; 
-}
-
-
-.indicator {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-right: 3px solid white;
-  border-top: 3px solid white;
-  transition: transform 0.3s ease;
-}
-
-.icon-chevron-up {
-  transform: rotate(-45deg); 
-}
-
-.icon-chevron-down {
-  transform: rotate(135deg); 
-}
-
-.table-content {
-  border: 1px solid #ddd;
-  border-top: none;
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
 }
 
 .data-table {
@@ -148,7 +80,6 @@
   border-collapse: collapse;
 }
 
-<<<<<<< HEAD
 .data-table th, .data-table td {
   padding: 10px; 
   font-size: 13px;
@@ -157,67 +88,18 @@
 
 .even-row {
   background-color: #f2e9e9;
-=======
-.data-table th {
-  padding: 18px; 
-  font-size: 18px; 
-  font-weight: bold;
-  border-bottom: 1px solid #eee;
-  color: #333;
-  text-align: left;
-}
-
-.data-table th.col-count {
-  text-align: center;
-}
-
-.data-table td {
-  padding: 18px; 
-  font-size: 18px;
-  color: #444;
-}
-
-.col-date {
-  width: 50%;
-  padding-left: 100px !important; 
-}
-
-.even-row {
-  background-color: #f4e7e7;
-}
-
-.col-count {
-  text-align: center; 
-  width: 30%;
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
 }
 
 .badge {
   background-color: #717171;
   color: white;
-<<<<<<< HEAD
   padding: 2px 8px;
   border-radius: 10px;
   font-size: 11px;
-  display: inline-block; /* স্পেলিং ঠিক করা হয়েছে */
+  display: inline-block;
 }
 
 .total-row {
   font-weight: bold;
   border-top: 1px solid #ddd;
-=======
-  padding: 6px 18px;
-  border-radius: 25px;
-  font-size: 14px;
-  font-weight: bold;
-  display: inline-block;
-  min-width: 60px;
-  text-align: center;
-}
-
-.total-row {
-  border-top: 2px solid #ddd;
-  font-weight: bold;
-  height: 60px; 
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
 }

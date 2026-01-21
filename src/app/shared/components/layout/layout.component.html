@@ -1,80 +1,62 @@
 <div class="flex flex-col min-h-screen bg-gray-50">
-  
+
   <header class="w-full bg-white shadow-sm z-10">
     <app-header></app-header>
   </header>
 
   <div class="flex flex-col md:flex-row flex-1 w-full">
 
-   <aside class="w-full md:w-[260px] bg-white border-b md:border-r border-blue-100 flex-shrink-0 shadow-sm">
-  <div class="px-2 py-4">
+    <aside class="w-full md:w-[260px] bg-white border-b md:border-r border-blue-100 flex-shrink-0 shadow-sm">
+      <div class="px-2 py-4">
 
-        <style>
-          .apu-avatar-box {
-            width: 110px; height: 110px; margin: 10px auto;
-            border: 1px solid #e2e8f0; border-radius: 50% !important;
-            padding: 3px; background-color: #fff;
-            overflow: hidden; display: flex; align-items: center; justify-content: center;
-          }
-          .apu-avatar-box img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
-        </style>
-
-        <div class="apu-avatar-box">
-          <img src="assets/useravater.png" onerror="this.src='assets/default-user.png'" alt="User photo" />
+        <div class="apu-avatar-box" style="width: 110px; height: 110px; margin: 10px auto; border: 1px solid #e2e8f0; border-radius: 50%; padding: 3px; background-color: #fff; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <img src="assets/useravater.png" onerror="this.src='assets/default-user.png'" alt="User photo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
         </div>
+
         <p class="text-center text-[14px] font-bold text-gray-700 uppercase mb-4 tracking-tight">bdjobs</p>
         
         <div class="border-t border-dashed border-gray-300 my-2 mx-3"></div>
 
-      <nav class="space-y-3 px-2">
-        <a routerLink="/daily-admit" 
-          routerLinkActive="!bg-[#083b78] !text-white" 
-          #rla1="routerLinkActive"
-          [ngClass]="rla1.isActive ? '' : 'hover:bg-[#ADC9E9] bg-white text-gray-800'"
-          class="flex items-center gap-3 px-4 py-2.5 rounded-full font-semibold text-[16px] transition-all duration-300">
-          <i class="fa-solid fa-file-lines text-[20px]"></i> <span>Daily Admit Download</span>
-        </a>
+        <nav class="space-y-3 px-2">
+          <a routerLink="/daily-admit" 
+             routerLinkActive="!bg-[#083b78] !text-white" 
+             #rla1="routerLinkActive"
+             [ngClass]="rla1.isActive ? '' : 'hover:bg-[#ADC9E9] bg-white text-gray-800'"
+             class="flex items-center gap-3 px-4 py-2.5 rounded-full font-semibold text-[16px] transition-all duration-300">
+            <i class="fa-solid fa-file-lines text-[20px]"></i>
+            <span>Daily Admit Download</span>
+          </a>
 
-        <a routerLink="/signature" 
-          routerLinkActive="!bg-[#083b78] !text-white" 
-          #rla2="routerLinkActive"
-          [ngClass]="rla2.isActive ? '' : 'hover:bg-[#ADC9E9] bg-white text-gray-800'"
-          class="flex items-center gap-3 px-4 py-2.5 rounded-full font-semibold text-[16px] transition-all duration-300">
-          <i class="fa-solid fa-file-lines text-[20px]"></i>
-          <span>Signature Sheet</span>
-        </a>
+          <a routerLink="/signature" 
+             routerLinkActive="!bg-[#083b78] !text-white" 
+             #rla2="routerLinkActive"
+             [ngClass]="rla2.isActive ? '' : 'hover:bg-[#ADC9E9] bg-white text-gray-800'"
+             class="flex items-center gap-3 px-4 py-2.5 rounded-full font-semibold text-[16px] transition-all duration-300">
+            <i class="fa-solid fa-file-lines text-[20px]"></i>
+            <span>Signature Sheet</span>
+          </a>
 
-<<<<<<< HEAD
-
-
-        <a (click)="logout()" 
-          class="flex items-center gap-3 px-4 py-2.5 rounded-full font-semibold text-[16px] cursor-pointer hover:bg-[#ADC9E9] text-gray-800 transition-all">
-=======
-        <a (click)="logout()" 
-          class="flex items-center gap-3 px-4 py-2.5 rounded-full font-semibold text-[16px] cursor-pointer hover:bg-red-50 text-gray-800 transition-all">
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
-          <i class="fa-solid fa-right-from-bracket text-[20px]"></i>
-          <span>Sign Out</span>
-        </a>
-      </nav>
+          <a (click)="logout()" 
+             class="flex items-center gap-3 px-4 py-2.5 rounded-full font-semibold text-[16px] cursor-pointer hover:bg-[#ADC9E9] text-gray-800 transition-all">
+            <i class="fa-solid fa-right-from-bracket text-[20px]"></i>
+            <span>Sign Out</span>
+          </a>
+        </nav>
 
         <div class="border-t border-dashed border-gray-300 my-4"></div>
-        </div>
+
+      </div>
     </aside>
 
-  <main class="flex-1 bg-white overflow-x-hidden min-h-[400px]">
-  <div class="w-full p-4 md:p-6"> 
-    <router-outlet></router-outlet>
-  </div>
-</main>
+    <main class="flex-1 bg-white overflow-x-hidden min-h-[400px]">
+      <div class="w-full p-4 md:p-6"> 
+        <router-outlet></router-outlet>
+      </div>
+    </main>
 
   </div>
 
   <footer class="w-full">
-<<<<<<< HEAD
-    
-=======
->>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
     <app-footer></app-footer>
   </footer>
 
