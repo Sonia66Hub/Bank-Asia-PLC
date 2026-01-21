@@ -6,7 +6,10 @@ import { RouterModule, Router } from '@angular/router';
 
 import { FooterComponent } from '../../..//core/layouts/footer/footer.component';
 import { HeaderComponent } from '../../..//core/layouts/header/header.component';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 896cf8056082808b4afb3b2f31f34641e4d4d65d
 @Component({
   selector: 'app-layout',
   standalone: true,
