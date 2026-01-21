@@ -3,21 +3,20 @@ import { FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { AuthService } from '../../core/services/auth/auth.service';
 
-// ১. ফুটার এবং হেডার দুটোই ইমপোর্ট করুন
 import { FooterComponent } from '../../core/layouts/footer/footer.component';
 import { HeaderComponent } from '../../core/layouts/header/header.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  // ২. imports অ্যারিতে HeaderComponent যোগ করে দিন
   imports: [
-    CommonModule, 
-    ReactiveFormsModule, 
-    FooterComponent, 
-    HeaderComponent  // <--- এটি যোগ করা হলো
-  ], 
+    CommonModule,
+    ReactiveFormsModule,
+    FooterComponent,
+    HeaderComponent
+  ],
   templateUrl: './login.component.html'
 })
 export class LoginComponent {
@@ -25,28 +24,21 @@ export class LoginComponent {
   private fb = inject(FormBuilder);
   private http = inject(HttpClient);
   private router = inject(Router);
+  private authService = inject(AuthService);
 
   submitted = false;
   errorMessage = '';
 
   loginForm = this.fb.group({
-    username: [
-      '',
-      [Validators.required, Validators.minLength(12), Validators.maxLength(12)]
-    ],
-    password: [
-      '',
-      [Validators.required, Validators.minLength(6), Validators.maxLength(6)]
-    ]
+    username: ['', [Validators.required, Validators.minLength(12), Validators.maxLength(12)]],
+    password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(6)]]
   });
 
   onSubmit() {
     this.submitted = true;
     this.errorMessage = '';
 
-    if (this.loginForm.invalid) {
-      return;
-    }
+    if (this.loginForm.invalid) return;
 
     const username = this.loginForm.value.username?.trim();
     const password = this.loginForm.value.password;
@@ -66,7 +58,10 @@ export class LoginComponent {
           return;
         }
 
-        // ✅ LOGIN SUCCESS → DASHBOARD
+        // ✅ SAVE TO SESSION STORAGE
+        this.authService.login(matchedUser);
+
+        // ✅ REDIRECT
         this.router.navigate(['/dashboard']);
       },
       error: () => {

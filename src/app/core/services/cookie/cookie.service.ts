@@ -35,7 +35,6 @@ export class CookieService {
         }
         return null;
     }
-
     deleteCookie(name: string): void {
         if (this.isBrowser) {
             this.setCookie(name, "", -1);
