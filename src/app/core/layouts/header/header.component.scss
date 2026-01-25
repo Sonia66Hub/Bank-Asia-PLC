@@ -1,0 +1,54 @@
+.white-header {
+  height: 100px;
+  background: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 5px 10px 0px rgba(173, 201, 234, 0.5); /* Soft Blue Shadow */
+  position: relative;
+  z-index: 10;
+
+  .logo-box {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 360px; /* Bank Asia লোগোর সাইজ অনুযায়ী */
+    height: 90px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 80px;
+      object-fit: contain;
+    }
+  }
+}
+
+// মোবাইল রেসপনসিভ ভিউ (768px বা তার নিচে)
+@media (max-width: 768px) {
+  .white-header {
+    height: 70px;
+    justify-content: center;
+
+    .logo-box {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 220px; /* মোবাইলে লোগো একটু ছোট দেখাবে */
+      height: 100%;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.header-divider {
+  border-bottom: 1px solid #eee;
+  background: white;
+}
